@@ -1,0 +1,55 @@
+# Byte-compiled / optimized / DLL files
+*.so
+*.dylib
+*.dll
+
+# Julia compiled files
+*.ji
+
+# Backup files
+*~
+*.bak
+*.backup
+
+# Temporary files
+.tmp/
+tmp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.swp
+*.swo
+
+# Julia package manager
+Manifest.toml
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Output files
+*.png
+*.pdf
+*.svg
+plots/
+output/
+
+# Log files
+*.log
+
+# Data files (keep the structure but ignore large datasets)
+# Uncomment if you want to exclude data files:
+# data/*.csv
+# data/*.xlsx
+# But keep the processed data:
+# !data/data.jld2
