@@ -1,19 +1,14 @@
-# Byte-compiled / optimized / DLL files
-*.so
-*.dylib
-*.dll
-
-# Julia compiled files
+# Julia
 *.ji
+Manifest.toml
+deps/deps.jl
 
-# Backup files
-*~
-*.bak
-*.backup
-
-# Temporary files
-.tmp/
-tmp/
+# IDE files
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.swp
+*.swo
 
 # OS generated files
 .DS_Store
@@ -24,32 +19,36 @@ tmp/
 ehthumbs.db
 Thumbs.db
 
-# IDE files
-.vscode/settings.json
-.vscode/launch.json
-.idea/
-*.swp
-*.swo
+# Backup files
+*~
+*.bak
+*.backup
 
-# Julia package manager
-Manifest.toml
+# Temporary files
+.tmp/
+tmp/
 
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# Output files
+# Output files and plots
+plots/
+output/
 *.png
 *.pdf
 *.svg
-plots/
-output/
 
 # Log files
 *.log
 
-# Data files (keep the structure but ignore large datasets)
-# Uncomment if you want to exclude data files:
-# data/*.csv
-# data/*.xlsx
-# But keep the processed data:
-# !data/data.jld2
+# Large data files (keep structure but exclude large datasets)
+data/*.csv
+data/*.xlsx
+data/*.json
+# Keep the processed binary data
+!data/data.jld2
+!data/Gold_finanzen_net.csv
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Documentation build
+docs/build/
+docs/site/
